@@ -117,7 +117,7 @@ The application follows **REST architecture** to enable seamless client-server c
 # 🏗️ Project Architecture
 
 <p align="center"> 
-  <img src="assets/project-architecture.png" alt="Project Architecture" width="95%"> 
+  <img src="assets/project-architecture.png" alt="Project Architecture" width="100%"> 
 </p>
 
 The application follows a **three-tier architecture** consisting of a responsive frontend, a RESTful backend, and a MongoDB database. The frontend communicates with the backend through REST API endpoints, while the backend processes requests, performs database operations using Mongoose, and returns JSON responses to the client.
@@ -159,7 +159,7 @@ Modern-CRUD-REST-API-Application/
 # 🔄 Application Workflow
 
 <p align="center"> 
-  <img src="assets/application-workflow.png" alt="Application Workflow" width="95%"> 
+  <img src="assets/application-workflow.png" alt="Application Workflow" width="100%"> 
 </p>
 
 ---
@@ -213,7 +213,7 @@ Add new user records through a clean and intuitive form with real-time validatio
 Modify existing user information quickly using the interactive update modal.
 
 <p align="center">
-<img src="assets/update-user.png" width="70%">
+<img src="assets/update-user.png" width="100%">
 </p>
 
 ---
@@ -223,7 +223,7 @@ Modify existing user information quickly using the interactive update modal.
 Before removing a record, the application displays a confirmation dialog to prevent accidental deletion.
 
 <p align="center">
-<img src="assets/delete-confirmation.png" width="70%">
+<img src="assets/delete-confirmation.png" width="100%">
 </p>
 
 ---
@@ -233,7 +233,7 @@ Before removing a record, the application displays a confirmation dialog to prev
 Receive instant visual feedback after successfully deleting a user record.
 
 <p align="center">
-<img src="assets/delete-success.png" width="70%">
+<img src="assets/delete-success.png" width="100%">
 </p>
 
 ---
