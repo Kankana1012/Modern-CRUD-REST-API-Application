@@ -247,3 +247,380 @@ All user records are stored in MongoDB using Mongoose. Each document contains th
 </p>
 
 ---
+
+# 🔌 REST API Endpoints
+
+The application exposes a RESTful API for performing complete **CRUD (Create, Read, Update, Delete)** operations on user records.
+
+| Method | Endpoint | Description |
+|:------:|:---------|:------------|
+| **GET** | `/api/users` | Retrieve all user records. |
+| **POST** | `/api/users` | Create a new user record. |
+| **PUT** | `/api/users/:id` | Update an existing user by its unique ID. |
+| **DELETE** | `/api/users/:id` | Delete a user by its unique ID. |
+
+## 📋 API Summary
+
+| Operation | HTTP Method | Endpoint |
+|-----------|:-----------:|----------|
+| Read All Users | `GET` | `/api/users` |
+| Create User | `POST` | `/api/users` |
+| Update User | `PUT` | `/api/users/:id` |
+| Delete User | `DELETE` | `/api/users/:id` |
+
+> **Base URL:** `http://localhost:3000/api/users`
+
+---
+
+# 📨 API Request Examples
+
+## 1️⃣ 📥 Get All Users
+
+**Request**
+
+```http
+GET /api/users
+```
+
+**Response**
+
+```json
+[
+  {
+    "_id": "689c1234567890abcdef1234",
+    "name": "John Doe",
+    "email": "john@example.com",
+    "phone": "9876543210"
+  }
+]
+```
+
+---
+
+## 2️⃣ ➕ Create User
+
+**Request**
+
+```http
+POST /api/users
+Content-Type: application/json
+```
+
+```json
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phone": "9876543210"
+}
+```
+
+**Response**
+
+```json
+{
+  "_id": "689c1234567890abcdef1234",
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phone": "9876543210"
+}
+```
+
+---
+
+## 3️⃣ ✏️ Update User
+
+**Request**
+
+```http
+PUT /api/users/689c1234567890abcdef1234
+Content-Type: application/json
+```
+
+```json
+{
+  "name": "John Smith",
+  "email": "johnsmith@example.com",
+  "phone": "9876543210"
+}
+```
+
+**Response**
+
+```json
+{
+  "_id": "689c1234567890abcdef1234",
+  "name": "John Smith",
+  "email": "johnsmith@example.com",
+  "phone": "9876543210"
+}
+```
+
+---
+
+## 4️⃣ 🗑️ Delete User
+
+**Request**
+
+```http
+DELETE /api/users/689c1234567890abcdef1234
+```
+
+**Response**
+
+```json
+{
+  "message": "User deleted successfully."
+}
+```
+---
+
+# 🚀 Getting Started
+
+Follow these steps to set up and run the project on your local machine.
+
+## Prerequisites
+
+Ensure the following software is installed before running the application.
+
+- Node.js (v18 or later recommended)
+- npm (comes with Node.js)
+- MongoDB Community Server
+- MongoDB Compass (Optional)
+- Git
+
+---
+
+# 📦 Installation
+
+Follow the steps to install the repository.
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/Bijoy781999/CRUD-REST-API-Management-System.git
+```
+
+Move into the project directory.
+
+```bash
+cd CRUD-REST-API-Management-System
+```
+
+---
+
+## Install Dependencies
+
+Navigate to the backend directory.
+
+```bash
+cd backend
+```
+
+Install all required npm packages.
+
+```bash
+npm install
+```
+
+---
+
+## Start MongoDB
+
+Make sure your local MongoDB service is running before starting the server.
+
+Default connection used in this project:
+
+```text
+mongodb://localhost:27017/crudDb
+```
+
+---
+
+# 🚀 Running the Application
+
+Ready to use the CRUD-API.
+
+## Start the Backend Server
+
+Inside the **backend** directory, start the Express server.
+
+```bash
+node server.js
+```
+
+If everything is configured correctly, you should see a message similar to:
+
+```text
+Server running on http://localhost:5000
+Connected to MongoDB
+```
+
+---
+
+## Launch the Frontend
+
+Open the **frontend** folder and launch:
+
+```text
+CRUD.html
+```
+
+You can:
+
+- Double-click the file to open it in your browser, or
+- Use the VS Code Live Server extension for a better development experience.
+
+The frontend communicates with the backend using the Fetch API.
+
+---
+
+# 📦 Backend Dependencies
+
+The project uses the following npm packages.
+
+| Package | Purpose |
+|----------|---------|
+| Express.js | Backend web framework |
+| Mongoose | MongoDB object modeling |
+| CORS | Enable cross-origin requests |
+| Dotenv* | Environment variable support (optional for future enhancements) |
+
+> **Note:** The current project connects directly to the local MongoDB URI. `dotenv` can be used in future versions to move configuration values into environment variables.
+
+---
+
+# 💾 Database Configuration
+
+The application stores all user records in MongoDB.
+
+**Database Name**
+
+```text
+crudDb
+```
+
+**Collection**
+
+```text
+items
+```
+
+Each document contains:
+
+```json
+{
+  "_id": "...",
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phone": "9876543210"
+}
+```
+
+Mongoose automatically generates the unique `_id` for every document.
+
+---
+
+# 🚀 Future Enhancements
+
+The project is continuously evolving with the goal of becoming a feature-rich and production-ready user management system. Planned improvements include:
+
+- 🔐 JWT Authentication & Authorization
+- 👥 Role-Based Access Control (RBAC)
+- ☁️ MongoDB Atlas Cloud Database Integration
+- 📄 Pagination for Large Datasets
+- 📤 Export Data to CSV, Excel, and PDF
+- 📊 Interactive Dashboard Analytics
+- 📸 Profile Image Upload Support
+- 📧 Email Verification & Notifications
+- 🔍 Advanced Filtering & Search
+- 📱 Progressive Web App (PWA) Support
+- 🐳 Docker Containerization
+- 🚀 Deployment on Render, Vercel, or Railway
+- 🧪 Automated Testing using Jest & Supertest
+- 📘 Swagger/OpenAPI Documentation
+- ⚙️ Environment Variable Configuration
+- 🔒 Enhanced Security & Input Validation
+
+---
+
+# 🤝 Contributing
+
+Contributions are always welcome!
+
+If you'd like to improve this project, feel free to:
+
+1. 🍴 Fork the repository.
+2. 🌿 Create a new feature branch.
+3. 💻 Make your changes.
+4. ✅ Commit your updates with meaningful messages.
+5. 🚀 Push your branch.
+6. 🔁 Open a Pull Request.
+
+Please ensure your code follows clean coding practices and maintains consistency with the existing project structure.
+
+---
+
+# 👤 Author
+
+### Kankana Chakraborty
+
+**AI/ML Engineer • Full-Stack Developer • Generative AI Enthusiast**
+
+Passionate about building modern full-stack applications, scalable REST APIs, intelligent AI solutions, and creating user-friendly software with clean architecture and elegant user experiences.
+
+- 💼 GitHub: https://github.com/Kankana1012
+- 💼 LinkedIn: https://www.linkedin.com/in/kankana-chakraborty
+- 📧 Email: lushichakraborty@gmail.com
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
+
+You are free to use, modify, and distribute this project in accordance with the terms of the MIT License.
+
+For more details, please refer to the **LICENSE** file included in this repository.
+
+---
+
+# 🙏 Acknowledgements
+
+Special thanks to the amazing open-source community and the technologies that made this project possible.
+
+- ❤️ HTML5
+- 🎨 CSS3
+- ⚡ JavaScript
+- 🚀 Node.js
+- 🌐 Express.js
+- 🍃 MongoDB
+- 📦 Mongoose
+- 💻 Visual Studio Code
+- 🛠️ Git & GitHub
+
+Their powerful tools and continuous innovation have greatly contributed to the development of this project.
+
+---
+
+# 💖 Support
+
+If you found this project helpful or learned something new from it, consider supporting it by:
+
+⭐ **Starring this repository**
+
+🍴 **Forking the project**
+
+📢 **Sharing it with others**
+
+🤝 **Contributing new features or improvements**
+
+Every star, contribution, and piece of feedback helps make this project even better.
+
+<h3 align="center">
+⭐ Thank you for visiting this repository! ⭐
+</h3>
+
+<p align="center">
+If you like this project, don't forget to leave a ⭐ on GitHub!
+</p>
+
