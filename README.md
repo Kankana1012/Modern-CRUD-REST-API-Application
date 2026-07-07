@@ -1,6 +1,9 @@
+<div align="center">
 <h1 align="center">
-  GlassCRUD - Modern CRUD REST API Application
+
+<img src="assets/logo.png" alt="CRUD REST API Management System Logo" width="60" align="center"> GlassCRUD - Modern CRUD REST API Application
 </h1>
+</div>
 
 <p align="center">
   <img src="/assets/banner.png" alt="Modern CRUD REST API Application Banner" width="100%">
