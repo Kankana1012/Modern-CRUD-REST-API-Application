@@ -54,6 +54,7 @@
 - [Project Architecture](#️-project-architecture)
 - [Repository Structure](#-repository-structure)
 - [Application Workflow](#-application-workflow)
+- [REST API Request Flow](#-rest-api-request-flow)
 - [Application Screenshots](#-application-screenshots)
 - [REST API Endpoints](#-rest-api-endpoints)
 - [Getting Started](#-getting-started)
@@ -163,3 +164,86 @@ Modern-CRUD-REST-API-Application/
 
 ---
 
+# 🔌 REST API Request Flow
+
+The application follows a **RESTful request-response lifecycle**, where the frontend communicates with the backend using HTTP methods. The Express.js server validates incoming requests, performs CRUD operations through Mongoose, interacts with MongoDB, and returns JSON responses that dynamically update the user interface.
+
+```
+Frontend
+    │
+    │  Fetch API
+    ▼
+Node.js + Express.js
+    │
+    │  Mongoose
+    ▼
+MongoDB
+    │
+    ▼
+JSON Response
+    │
+    ▼
+Frontend Updates UI
+
+```
+# 📸 Application Screenshots
+
+## 🏠 Home Page
+
+Displays all user records with live statistics, search, sorting, and responsive card/table views.
+
+<p align="center">
+<img src="assets/home.png" width="100%">
+</p>
+
+---
+
+## ➕ Create User
+
+Add new user records through a clean and intuitive form with real-time validation.
+
+<p align="center">
+<img src="assets/create-user.png" width="100%">
+</p>
+
+---
+
+## ✏️ Update User
+
+Modify existing user information quickly using the interactive update modal.
+
+<p align="center">
+<img src="assets/update-user.png" width="70%">
+</p>
+
+---
+
+## 🗑 Delete Confirmation
+
+Before removing a record, the application displays a confirmation dialog to prevent accidental deletion.
+
+<p align="center">
+<img src="assets/delete-confirmation.png" width="70%">
+</p>
+
+---
+
+## ✅ Delete Success
+
+Receive instant visual feedback after successfully deleting a user record.
+
+<p align="center">
+<img src="assets/delete-success.png" width="70%">
+</p>
+
+---
+
+## 🗄 MongoDB Database
+
+All user records are stored in MongoDB using Mongoose. Each document contains the user's name, email, and phone number.
+
+<p align="center">
+<img src="assets/mongodb.png" width="100%">
+</p>
+
+---
