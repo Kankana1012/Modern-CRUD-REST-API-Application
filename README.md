@@ -53,6 +53,7 @@
 - [Technology Stack](#️-technology-stack)
 - [Project Architecture](#️-project-architecture)
 - [Repository Structure](#-repository-structure)
+- [Application Workflow](#-application-workflow)
 - [Application Screenshots](#-application-screenshots)
 - [REST API Endpoints](#-rest-api-endpoints)
 - [Getting Started](#-getting-started)
@@ -114,10 +115,12 @@ The application follows **REST architecture** to enable seamless client-server c
 
 # 🏗️ Project Architecture
 
-The application follows a **three-tier architecture** consisting of a responsive frontend, a RESTful backend, and a MongoDB database. The frontend communicates with the backend through REST API endpoints, while the backend processes requests, performs database operations using Mongoose, and returns JSON responses to the client.
 <p align="center"> 
   <img src="assets/project-architecture.png" alt="Project Architecture" width="95%"> 
 </p>
+
+The application follows a **three-tier architecture** consisting of a responsive frontend, a RESTful backend, and a MongoDB database. The frontend communicates with the backend through REST API endpoints, while the backend processes requests, performs database operations using Mongoose, and returns JSON responses to the client.
+
 ---
 
 # 📂 Repository Structure
@@ -150,3 +153,13 @@ Modern-CRUD-REST-API-Application/
 └── README.md
 
 ```
+---
+
+# 🔄 Application Workflow
+
+<p align="center"> 
+  <img src="assets/application-workflow.png" alt="Application Workflow" width="95%"> 
+</p>
+
+---
+
