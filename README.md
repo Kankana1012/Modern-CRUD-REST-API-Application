@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  ***A Modern Full-Stack CRUD REST API Application with a Responsive Glassmorphism Dashboard***
+  <strong><em>A Modern Full-Stack CRUD REST API Application with a Responsive Glassmorphism Dashboard</em></strong>
 </p>
 
 <p align="center">
