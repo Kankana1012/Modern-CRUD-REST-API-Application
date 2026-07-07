@@ -616,6 +616,8 @@ If you found this project helpful or learned something new from it, consider sup
 
 Every star, contribution, and piece of feedback helps make this project even better.
 
+---
+
 <h3 align="center">
 ⭐ Thank you for visiting this repository! ⭐
 </h3>
